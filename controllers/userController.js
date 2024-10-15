@@ -49,11 +49,14 @@ export const createUser = async (req, res) => {
 export const getUsers = async (req, res) => {
   try {
     const [rows] = await User.getAllUsers();
+    console.log("just checking try block")
     res.status(200).json({
       message:"All Users",
       data:rows,
     });
   } catch (error) {
+    console.log("just checking catch block")
+
     res.status(500).json({ message: error.message });
   }
 };
