@@ -13,6 +13,6 @@ app.use(cors());
 app.use('/api',userRoutes)
 
 app.listen(process.env.PORT,()=>{
-    console.log(`Server is Listen at port ${process.env.PORT} `)
+    console.log(`Server is Listen at port ${process.env.PORT} `) 
 })
 
